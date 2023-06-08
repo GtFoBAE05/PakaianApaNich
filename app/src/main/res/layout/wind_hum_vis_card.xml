@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#21394E">
+
+        <ImageView
+            android:id="@+id/windImageView"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/humidityImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wind" />
+
+        <ImageView
+            android:id="@+id/humidityImageView"
+            android:layout_width="136dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/windImageView"
+            app:layout_constraintEnd_toStartOf="@+id/visibilityImageView"
+            app:layout_constraintStart_toEndOf="@+id/windImageView"
+            app:layout_constraintTop_toTopOf="@+id/windImageView"
+            app:srcCompat="@drawable/humicon" />
+
+        <ImageView
+            android:id="@+id/visibilityImageView"
+            android:layout_width="136dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/humidityImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/humidityImageView"
+            app:layout_constraintTop_toTopOf="@+id/humidityImageView"
+            app:srcCompat="@drawable/visicon" />
+
+        <TextView
+            android:id="@+id/windNumberTv"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="10  m/s"
+            android:textColor="@color/f3f3f3"
+            app:layout_constraintEnd_toEndOf="@+id/windImageView"
+            app:layout_constraintStart_toStartOf="@+id/windImageView"
+            app:layout_constraintTop_toBottomOf="@+id/windImageView" />
+
+        <TextView
+            android:id="@+id/humidityNumberTv"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="98%"
+            android:textColor="@color/f3f3f3"
+            app:layout_constraintEnd_toEndOf="@+id/humidityImageView"
+            app:layout_constraintStart_toEndOf="@+id/windImageView"
+            app:layout_constraintTop_toBottomOf="@+id/humidityImageView" />
+
+        <TextView
+            android:id="@+id/visibilityNumberTv"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1000"
+            android:textColor="@color/f3f3f3"
+            app:layout_constraintEnd_toEndOf="@+id/visibilityImageView"
+            app:layout_constraintStart_toEndOf="@+id/humidityImageView"
+            app:layout_constraintTop_toBottomOf="@+id/visibilityImageView" />
+
+        <TextView
+            android:id="@+id/windTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Wind"
+            android:textColor="@color/f3f3f3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/windNumberTv"
+            app:layout_constraintStart_toStartOf="@+id/windNumberTv"
+            app:layout_constraintTop_toBottomOf="@+id/windNumberTv" />
+
+        <TextView
+            android:id="@+id/humidityTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Humidity"
+            android:textColor="@color/f3f3f3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/humidityNumberTv"
+            app:layout_constraintStart_toStartOf="@+id/humidityNumberTv"
+            app:layout_constraintTop_toBottomOf="@+id/humidityNumberTv" />
+
+        <TextView
+            android:id="@+id/visibilityTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Visibility"
+            android:textColor="@color/f3f3f3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/visibilityNumberTv"
+            app:layout_constraintStart_toStartOf="@+id/visibilityNumberTv"
+            app:layout_constraintTop_toBottomOf="@+id/visibilityNumberTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

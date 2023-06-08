@@ -11,7 +11,6 @@ val apiModule = module {
     single { ApiConfig().getApiService() }
 }
 
-
 val repositoryModule = module {
     single { UserRepository(get()) }
 }
