@@ -7,3 +7,6 @@ This simple app is designed to provide users with weather information and clothi
 - Integration with OpenWeatherAPI
 - Location-based
 - MVVM architecture
+
+![Screenshot_20230608_234802](https://github.com/GtFoBAE05/PakaianApaNich/assets/70452074/5df716d5-7854-4be2-bcc1-20c4dd5fa9a1)
+
